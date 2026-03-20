@@ -99,6 +99,19 @@ cluster_suggestions = {
 # =====================================================
 # DATA UPLOAD
 # =====================================================
+st.info("""
+📋 **Required Column Names:**
+- Regd No.
+- Cgpa
+- Total_Courses
+- PASS
+- Current_Attendance
+- Delivered
+- Attended
+
+Make sure your Excel file contains these columns.
+""")
+
 uploaded_file = st.file_uploader(
     "Upload student dataset (.xlsx)",
     type=["xlsx"]
